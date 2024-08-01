@@ -3,5 +3,5 @@ using namespace std;
 int main(){
     int x;
     cin>>x;
-    cout<<"Your input is:"<<x;
+    cout<<"Your input is:"<<x*x;
 }
