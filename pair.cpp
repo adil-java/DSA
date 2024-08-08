@@ -22,9 +22,11 @@ vector<int> v = {1,2,3,4,5};
 // v.insert(v.begin(),5,5);//at 0th position add five occurance of 5 output:5 5 5 5 5 5 1
 // vector <int>copy = v;
 // v.insert(v.begin(),copy.begin(),copy.end());// add an entire vector into another vector
-// for(auto i = v.begin();i != v.end();i++){
-//     cout<<*i;
-// }
-
+// v.pop_back();//remove element at the end th index;
+// v.clear();//vector is clear!!
+for(auto i = v.begin();i != v.end();i++){
+    cout<<*i;
+}
+// cout<<boolalpha<<v.empty();//for checking is vector is empty or not
 return 0;
 }
