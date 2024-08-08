@@ -72,16 +72,51 @@
 // rest of operation are same//
 
 // ======================stack=======
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+// stack<int>s;//lifo:last in first out
+// s.push(10);
+// s.push(20);
+// s.push(30);
+// s.push(40);
+// s.push(50);
+// cout<<s.top();//output: 50
+
+// return 0;
+// }
+// ======================queue=============
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+// queue<int>q;//fifo: first in first out
+// q.push(10);
+// q.push(20);
+// q.push(30);
+// q.front()+=12;//10+12;
+// cout<<q.front()<<endl;//output: 10
+// cout<<q.back();
+// q.pop(); //it will remove the 10 the  first in element
+// cout<<q.front();
+// return 0;
+// }
+// ==================================Priority Queue=========== 
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-stack<int>s;//lifo:last in first out
-s.push(10);
-s.push(20);
-s.push(30);
-s.push(40);
-s.push(50);
-cout<<s.top();//output: 50
-
+// priority_queue<int> pq;// elements are placed in a container by it size largest  element will be at top
+// pq.push(10);
+// pq.push(100);
+// pq.push(30);
+// cout<<pq.top()<<endl;//output: 100;
+// pq.pop();//top element remove
+// cout<<pq.top();
+// for reversing the behaviour of priority queue
+priority_queue <int, vector <int >,greater <int>>pq;
+pq.push(10);
+pq.push(100);
+pq.push(30); cout<<pq.top()<<endl;//output: 10;
+pq.pop();//top element remove
+cout<<pq.top();
 return 0;
 }
