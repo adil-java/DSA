@@ -101,22 +101,61 @@
 // return 0;
 // }
 // ==================================Priority Queue=========== 
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-// priority_queue<int> pq;// elements are placed in a container by it size largest  element will be at top
-// pq.push(10);
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() { //max heap
+// // priority_queue<int> pq;// elements are placed in a container by it size largest  element will be at top
+// // pq.push(10);
+// // pq.push(100);
+// // pq.push(30);
+// // cout<<pq.top()<<endl;//output: 100;
+// // pq.pop();//top element remove
+// // cout<<pq.top();
+// // for reversing the behaviour of priority queue
+// priority_queue <int, vector <int >,greater <int>>pq;
+// pq.push(10); //min heap
 // pq.push(100);
-// pq.push(30);
-// cout<<pq.top()<<endl;//output: 100;
+// pq.push(30); cout<<pq.top()<<endl;//output: 10;
 // pq.pop();//top element remove
 // cout<<pq.top();
-// for reversing the behaviour of priority queue
-priority_queue <int, vector <int >,greater <int>>pq;
-pq.push(10);
-pq.push(100);
-pq.push(30); cout<<pq.top()<<endl;//output: 10;
-pq.pop();//top element remove
-cout<<pq.top();
-return 0;
-}
+// return 0;
+// }
+// ==================set==================
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {//It stores a unique and sorted elements
+// set <int > s;
+// s.insert(1);
+// s.insert(3);
+// s.insert(4);
+// s.insert(2);
+// for(auto i = s.begin();i!=s.end();i++){
+//     cout<<*i<<endl;
+// }
+// // auto b = s.find(9);// So 9 is not in set it will give the element at the last index
+// auto b = s.find(2);
+// cout<<*b<<endl;
+// return 0;
+// }
+// ==================multiset=================
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() { //sorted but not unique, repeation is allowed
+// multiset<int> ms;
+// ms.insert(1);
+// ms.insert(1);
+// ms.insert(2);
+// ms.insert(2);
+// // ms.insert(0);
+// // ms.insert(0);
+// ms.insert(3);
+// ms.insert(3);
+// auto a = ms.find(1);
+// ms.erase( ms.find(1), next(ms.find(1),2));
+// for(auto i = ms.begin();i!=ms.end();i++){
+//     cout<<*i<<endl;
+// }
+
+
+// return 0;
+// }
