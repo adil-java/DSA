@@ -69,3 +69,19 @@
 // }//output:1 2 
 // return 0;
 // }
+// rest of operation are same//
+
+// ======================stack=======
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+stack<int>s;//lifo:last in first out
+s.push(10);
+s.push(20);
+s.push(30);
+s.push(40);
+s.push(50);
+cout<<s.top();//output: 50
+
+return 0;
+}
