@@ -159,3 +159,27 @@
 
 // return 0;
 // }
+// another type of set is unordered set it has all the properties same as set but it has randomized order but it has unique elements.
+// ======================map================
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+// map<int,string> m;
+// m[1]= "adil";
+// cout<<m[1];
+// return 0;
+// }
+// perdefine sort algos
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+pair<int, int> p[] = {{1, 2}, {3, 1}, {4, 3}};
+    sort(p, p + 3, comp);
+
+vector<int> a= {5,1,2,3,4,0};
+sort(a.begin(),a.end());
+for(int i = 0;i<5;i++){
+    cout<<a[i]<<" ";}
+return 0;
+}
