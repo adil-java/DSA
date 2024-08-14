@@ -75,24 +75,25 @@
 // return 0;
 // }
 // Alternative Way
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-int p =11;
-int c= 0;
-for(int i =1;i*i<=p;i++){
-    if(p%i==0){
-        c++;
-        if(p/i!=i){
-            c++;
-        }
-    }
-}
-if(c==2){
-cout<<p<<" Is prime number";
-}
-else
-cout<<p<<" Is not a prime number";
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+// int p =11;
+// int c= 0;
+// for(int i =1;i*i<=p;i++){
+//     if(p%i==0){
+//         c++;
+//         if(p/i!=i){
+//             c++;
+//         }
+//     }
+// }
+// if(c==2){
+// cout<<p<<" Is prime number";
+// }
+// else
+// cout<<p<<" Is not a prime number";
 
-return 0;
-}
+// return 0;
+// }
+
