@@ -24,18 +24,18 @@
 // }
 
 //================backtracking N to 1
-#include <bits/stdc++.h>
-using namespace std;
-void f(int n,int i){
-    if(i>n) return;
-    f(n,i+1);
-    cout<<i<<endl;
-}
-using namespace std;
-int main() {
-f(5,1);
-return 0;
-}
+// #include <bits/stdc++.h>
+// using namespace std;
+// void f(int n,int i){
+//     if(i>n) return;
+//     f(n,i+1);
+//     cout<<i<<endl;
+// }
+// using namespace std;
+// int main() {
+// f(5,1);
+// return 0;
+// }
 //=========================
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -63,3 +63,14 @@ return 0;
 // cout<<fib(9)<<endl;
 // return 0;
 // }
+//====Sum with single parameter
+#include <bits/stdc++.h>
+int sum(int n){
+    if(n==0) return 0;
+    return n+sum(n-1);
+}
+using namespace std;
+int main() {
+cout<<sum(3);
+return 0;
+}
