@@ -64,13 +64,24 @@
 // return 0;
 // }
 //====Sum with single parameter
+// #include <bits/stdc++.h>
+// int sum(int n){
+//     if(n==0) return 0;
+//     return n+sum(n-1);
+// }
+// using namespace std;
+// int main() {
+// cout<<sum(3);
+// return 0;
+// }
 #include <bits/stdc++.h>
-int sum(int n){
-    if(n==0) return 0;
-    return n+sum(n-1);
-}
 using namespace std;
+int fact(int  n){
+    if(n==1)return 1;
+    return n*fact(n-1);
+}
 int main() {
-cout<<sum(3);
+    cout<<fact(4);
+
 return 0;
 }
