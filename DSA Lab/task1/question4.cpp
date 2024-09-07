@@ -23,11 +23,11 @@ int findTarget(int arr[], int target, int size) {
 int main() {
     int arr1[] = {-1,0,3,5,9,12};
     int size1 = sizeof(arr1)/sizeof(arr1[0]);
-    cout << findTarget(arr1,9,size1) << endl;
+    cout <<"Target "<<9<<" found at:"<< findTarget(arr1,9,size1) << endl;
     
     int arr2[] = {-1,0,3,5,9,12};
     int size2 = sizeof(arr2)/sizeof(arr2[0]);
-    cout << findTarget(arr2,2,size2) << endl;
+    cout<<"Target "<<2<<" found at:"<< findTarget(arr2,2,size2) << endl;
     
     return 0;
 }
