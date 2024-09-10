@@ -3,14 +3,18 @@ using namespace std;
 int main() {
 int k =5;
 int a[3]={1,2,4};
-for(int i =0 ;i<3;i++){
-    while(k--){
-        a[i]+=1;
-    }
+int first=0;
+int last=0;
+int res=1;
+int s=0;
+while(end<a.size()){
+s+=a[last++];
 
+    if(s+k<a[last-1]*(last-first)){
+      s-=a[start++];
+    }
+     res=max(res,last-first);
 }
-for(int aa: a){
-    cout<<aa<<endl;
-}
+cout<<res;
 return 0;
 }
