@@ -7,7 +7,7 @@ int first=0;
 int last=0;
 int res=1;
 int s=0;
-while(end<a.size()){
+while(last<a.size()){
 s+=a[last++];
 
     if(s+k<a[last-1]*(last-first)){
