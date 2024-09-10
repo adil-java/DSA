@@ -10,7 +10,9 @@
       "pipeTransport": {
         "debuggerPath": "/usr/bin/gdb",
         "pipeProgram": "${env:windir}\\system32\\bash.exe",
-        "pipeArgs": ["-c"],
+        "pipeArgs": [
+          "-c"
+        ],
         "pipeCwd": ""
       },
       "setupCommands": [
@@ -71,8 +73,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "g:/DSA",
-      "program": "g:/DSA/build/Debug/outDebug",
+      "cwd": "g:/DSA/Hashing",
+      "program": "g:/DSA/Hashing/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

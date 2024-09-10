@@ -34,8 +34,10 @@ bool f(int n , string w){
     if(w[n]!=w[w.size()-n-1]) return false;
     return f(n+1,w);
 }
+
 int main() {
     string word ="ada";
+    cout<<endl;
 //  cout<<boolalpha<<checkPalindrom(word,size);
     // cout<<boolalpha<<checkPalindrom(word,0,size);
     cout<<boolalpha<<f(0,word);
