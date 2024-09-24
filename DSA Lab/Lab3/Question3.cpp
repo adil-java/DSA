@@ -1,20 +1,20 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Adil_Lab03 {
+class Adi_Lab03 {
     int capacity;
     int top;
-    int* arr;
+    char* arr;
 public:
-    Adil_Lab03(int s) {
+    Adi_Lab03(int s) {
         capacity = s;
         top = -1;
-        arr = new int[capacity];
+        arr = new char[capacity];
     }
-    ~Adil_Lab03() {
+    ~Adi_Lab03() {
         delete[] arr;
     }
-    void push(int element) {
+    void push(char element) {
         if (top == capacity - 1) {
             cout << "Stack overflow. Resizing..." << endl;
             resize();
@@ -27,38 +27,38 @@ public:
             cout << "Stack underflow." << endl;
         }
         else {
-            cout << arr[top] << " ";
+            cout << arr[top];
             top -= 1;
         }
     }
     void peek() {
         if (top == -1) {
-            cout << "The stack is empty." << endl;
+            cout << "The Stack is empty." << endl;
         }
         else {
-            cout << "The top element in the stack is: " << arr[top] << endl;
+            cout << "The top element in the Stack is: " << arr[top] << endl;
         }
     }
     void isempty() {
         if (top == -1) {
-            cout << "The stack is empty." << endl;
+            cout << "The Stack is empty." << endl;
         }
         else {
-            cout << "The stack is not empty." << endl;
+            cout << "The Stack is not empty." << endl;
         }
     }
     int size() {
         return top + 1;
     }
-    void display() {
-        cout << "The stack is: ";
+    void displayAll() {
+        cout << "The Stack is: ";
         for (int i = 0; i <= top; i++) {
             cout << arr[i] << " ";
         }
         cout << endl;
     }
     void resize() {
-        int* temp = new int[capacity * 2];
+        char* temp = new char[capacity * 2];
         for (int i = 0; i < capacity; i++) {
             temp[i] = arr[i];
         }
@@ -66,31 +66,31 @@ public:
         arr = temp;
         capacity = capacity * 2;
     }
-    int fibonacci(int terms) {
-        if (terms == 0) {
-            return 0;
+    void IsPalindrome() {
+        bool ans = true;
+        for (int i = 0; i < top / 2 + 1; i++) {
+            if (arr[i] != arr[top - i]) {
+                ans = false;
+                break;
+            }
         }
-        if (terms == 1) {
-            return 1;
+        if (ans) {
+            cout << "The given string is a palindrome." << endl;
         }
-        return fibonacci(terms - 1) + fibonacci(terms - 2);
-    }
-    void seq(int terms) {
-        for (int i = 1; i <= terms; i++) {
-            push(fibonacci(i));
+        else {
+            cout << "The given string is not a palindrome." << endl;
         }
     }
 };
-
 int main() {
-    Adil_Lab03 stack(10);
-    int sequence;
-    cout<<"Enter the number of terms:";cin>>sequence;
-    stack.seq(sequence);
-    cout << "The fibonacci series is :" << endl;
-    int s = stack.size();
-    for (int i = 0;i < s;i++) {
-        stack.pop();
+    Adi_Lab03 Stack(10);
+    string s;
+    cout << "Enter the string: ";
+    getline(cin, s);
+    for (char c : s) {
+        Stack.push(c);
     }
+    Stack.IsPalindrome();
+    Stack.displayAll();
     return 0;
 }
